@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="myFavs"></div>
+
+
+  
+  <div id="userFavs"></div>
+
+
+
+  <script>
+
+let movie = 'Super Troopers'
+let song = 'Everlong'
+let game = 'Call Of Duty'
+let food = 'Chilaquiles Verdes'
+
+let userMovie = prompt('What is your favorite Movie?')
+
+if(movie === userMovie){
+  alert('That is my favorite movie too!')
+}
+
+let userSong = prompt('What is your favorite song?')
+
+if(song === userSong){
+  alert('That is my favorite song too!')
+}
+
+let userGame = prompt('What is your favorite game?')
+
+if(game === userGame){
+  alert('That is my favorite game too!')
+}
+
+let userFood = prompt('What is your favorite food?')
+
+if(food === userFood){
+alert('That is my favorite food too!')
+}
+
+document.getElementById('myFavs').innerHTML = `
+<p>Favorite Movie: ${movie} </p>
+<p>Favorite Song: ${song} </p>
+<p>Favorite Game:${game} </p>
+<p>Favorite Food: ${food}</p>
+`
+document.getElementById('userFavs').innerHTML = `
+<p>User's Favorite Movie: ${userMovie} </p>
+<p>User's Favorite Song:  ${userSong}  </p>
+<p>User's Favorite Game:  ${userGame}  </p>
+<p>User's Favorite Food:  ${userFood}  </p>
+`
+  </script>
+</body>
+</html>
